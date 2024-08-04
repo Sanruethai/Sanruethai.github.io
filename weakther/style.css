@@ -1,0 +1,148 @@
+/* ตั้งค่าพื้นหลังของหน้าเว็บ */
+body {
+    background-color: #2c2c2c; /* สีพื้นหลังมืด */
+    color: #e0e0e0; /* สีตัวอักษรที่ชัดเจนในพื้นหลังมืด */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* การจัดการ container ให้อยู่กลางหน้าและมีความกว้างสูงสุด */
+.container {
+    max-width: 1200px;
+}
+
+/* รูปแบบของการ์ด */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color: #3e3e3e; /* สีพื้นหลังการ์ดมืด */
+    overflow: hidden;
+}
+
+/* รูปแบบของ card-head */
+.card-head {
+    padding: 20px;
+    border-bottom: 2px solid #4a4a4a;
+    background-color: #4a4a4a;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+/* รูปแบบของ card-item */
+.card-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #4a4a4a;
+}
+
+/* รูปแบบของ card-footer */
+.card-footer {
+    padding: 20px;
+    border-top: 2px solid #4a4a4a;
+    background-color: #4a4a4a;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* รูปแบบของ current-weather */
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* รูปแบบของ details ใน current-weather */
+.details {
+    flex: 1;
+    color: #f0f0f0;
+}
+
+/* รูปแบบของ weather-icon */
+.weather-icon {
+    flex: 0 0 120px;
+}
+
+/* รูปแบบของ weather-data */
+.weather-data {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* รูปแบบของ weather-left และ weather-right */
+.weather-left, .weather-right {
+    flex: 1;
+}
+
+/* รูปแบบของปุ่มค้นหา */
+.btn-primary {
+    background-color: #1e90ff; /* สีพื้นหลังปุ่ม */
+    border-color: #1e90ff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff; /* สีตัวอักษรในปุ่ม */
+}
+
+/* รูปแบบของปุ่มค้นหาเมื่อ hover */
+.btn-primary:hover {
+    background-color: #1c86ee;
+    border-color: #1c86ee;
+}
+
+/* รูปแบบของ input */
+.form-control {
+    border-radius: 25px;
+    border-color: #6c757d;
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+}
+
+/* รูปแบบของ input เมื่อ focus */
+.form-control:focus {
+    border-color: #1e90ff;
+    box-shadow: 0 0 0 0.2rem rgba(30, 144, 255, 0.25);
+}
+
+/* รูปแบบของ p และ h2 ภายใน card-item */
+.card-item p, .card-item h2 {
+    margin: 0;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+/* รูปแบบของ icons */
+i {
+    color: #1e90ff; /* สีของไอคอน */
+}
+
+/* รูปแบบของ weather-icon */
+.weather-icon img {
+    width: 80px;
+}
+
+/* รูปแบบของ temperature */
+#temperature {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff; /* สีของอุณหภูมิ */
+}
+
+/* รูปแบบของ description */
+#description {
+    font-size: 1.2rem;
+    color: #b0b0b0; /* สีของคำบรรยาย */
+}
+
+/* รูปแบบของ windSpeedval, humidityVal, feelsVal */
+#windSpeedval, #humidityVal, #feelsVal {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff; /* สีของข้อมูลใน card-item */
+}
